@@ -17,3 +17,12 @@ $(document).ready(function () {
         }, 1000);
     });
 });
+$(document).ready(function () { //READY ASEGURA QUE PAGINA ESTE YA CARGADA
+    $('[data-bs-toggle="tooltip"]').tooltip();
+});
+// 
+$(document).ready(function () {
+    $("#enviarMensaje").click(function () {
+        alert("Tu mensaje fue enviado correctamente...");
+    });
+});

@@ -1,3 +1,9 @@
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
 .tit-viajes-chile {
 
     font-family: "Bebas Neue", sans-serif;
@@ -5,14 +11,19 @@
     font-style: normal;
 
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: grey;
 }
-.card, .parrafo-cel, button{
+
+.card,
+.parrafo-cel,
+button {
     border-color: white;
     background-color: lightseagreen;
 }
+
 .hero-section {
     position: relative;
 }
@@ -26,6 +37,7 @@
 .carousel {
     margin-top: 60px;
 }
+
 .arrow-up {
     cursor: pointer;
     margin-left: 10px;
