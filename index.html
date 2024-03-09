@@ -18,28 +18,56 @@
 
 <body>
     <div class="hero-section">
-        <nav class="navbar navbar-expand-lg mt-0 p-0">
+        <nav class="navbar navbar-expand-lg mt-0 p-0 navbar-dark">
             <div class="container-fluid div-nav px-5">
                 <a class="navbar-brand me-2 mt-1" href="#"><img alt="Logo" height="60px"
-                        src="assets/img/viajes.svg"></img></a>
+                        src="assets/img/viajes.svg"></a>
                 <label class="text-white tit-viajes-chile fs-3">Viajes Chile</label>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse text-light " id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse text-light" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link text-white" href="#">Inicio</a>
-                        <a class="nav-link text-white" href="#">Quienes somos</a>
-                        <a class="nav-link text-white" href="#">Destacados</a>
-                        <a class="nav-link text-white" href="#">Contacto</a>
+                        <a class="nav-link text-white" href="#quienes-somos">Quienes somos</a>
+                        <a class="nav-link text-white" href="#destacados">Destacados</a>
+                        <a class="nav-link text-white" href="#contacto">Contacto</a>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <div id="carouselExample" class="carousel slide mt-0" data-bs-ride="carousel">
+            <div class="carousel-inner mt-0">
+           
+                <div class="carousel-item active mt-0">
+                    <img src="assets/img/card1.jpg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/card2.jpg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/card3.jpg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/card4.jpg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
     </div>
-    <section class="bg-black p-5">
+
+    <section id="quienes-somos" class="bg-black p-5 text-light">
         <div class="container">
             <h2 class="text-center text-light fw-light">¿QUIÉNES SOMOS?</h2>
             <div class="text-body-secondary">
@@ -47,7 +75,7 @@
             </div>
             <div class="row">
                 <div class="col-4 text-white">
-                <div class="parrafo-cel text-center p-2"><i class="fa-solid fa-plane h2 "></i></div>
+                    <div class="parrafo-cel text-center p-2"><i class="fa-solid fa-plane h2 "></i></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laudantium, recusandae
                         nesciunt modi mollitia quisquam vero voluptatum, praesentium laborum sit cum asperiores itaque
                         porro, magnam quaerat minima quod pariatur reiciendis.</p>
@@ -56,7 +84,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laudantium, recusandae
                         nesciunt modi mollitia quisquam vero voluptatum, praesentium laborum sit cum asperiores itaque
                         porro, magnam quaerat minima quod pariatur reiciendis.</p>
-                        <div class="parrafo-cel text-center p-2"><i class="fa-solid fa-mountain h2 "></i></div>
+                    <div class="parrafo-cel text-center p-2"><i class="fa-solid fa-mountain h2 "></i></div>
                 </div>
                 <div class="col-4 text-white">
                     <div class="parrafo-cel text-center p-2"><i class="fa-solid fa-route h2"></i></i></div>
@@ -67,8 +95,8 @@
             </div>
         </div>
     </section>
-    <!-- CARRUSEL -->
-    <section class="m-0 p-5 bg-black">
+    <!--  OTRO CARRUSEL -->
+    <section class="m-0 p-5 bg-black" id="destacados" >
         <h2 class="text-center text-light fw-light">DESTACADOS</h2>
         <div class="text-body-secondary">
             <hr>
@@ -111,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- SEGUNDA VISTA -->
+                <!-- SEGUNDA VISTA CARRUSEL -->
                 <div class="carousel-item">
                     <div class="container-fluid">
                         <div class="row ">
@@ -158,6 +186,49 @@
             </button>
         </div>
         </div>
+    </section>
+    <section class="bg-black p-5" id="contacto" >
+        <h2 class="text-center text-light fw-light">CONTACTO</h2>
+        <div class="text-body-secondary">
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form id="contactoForm text-white">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label text-white">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label text-white">Asunto</label>
+                            <input type="text" class="form-control" id="asunto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label text-white">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="parrafo-cel d-flex justify-content-between align-items-center p-5">
+        <h2 class="text-light fw-light ps-5">VIAJES CHILE</h2>
+        <div class="pe-5 text-light d-flex align-items-center">
+            <a><i class="fab fa-github h1 p-2"></i></a>
+            <a><i class="fab fa-linkedin h1 p-2"></i></a>
+            <a><i class="fab fa-twitter-square h1 p-2"></i></a>
+            <a><i class="fab fa-facebook-square h1 p-2"></i></a>
+            <a href="#" class="arrow-up">
+                <i class="fas fa-arrow-up h1"></i>
+            </a>
+        </div>
+    </footer>
+    
+    
+    
     </section>
 
     <!-- Font Awesome -->
